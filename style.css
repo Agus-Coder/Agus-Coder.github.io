@@ -11,7 +11,11 @@ header, main, footer{
 }
 
 .pantalla__inicio{
-    height: 50vh;
+    height: 60vh;
+    background-image: url(images/fondo_inicio.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: aliceblue;
 }
 
 ul li {
@@ -21,5 +25,9 @@ ul li {
 section{
     height: 40vh;
     border: 1px solid #FFe50F;
+    padding: 5rem;
 }
 
+.imagen {
+    display: inline;
+}
