@@ -25,9 +25,24 @@ ul li {
 section{
     height: 40vh;
     border: 1px solid #FFe50F;
-    padding: 5rem;
+    padding: 2em;
 }
 
 .imagen {
     display: inline;
+    height: 90%;
+    width: auto;
+}
+
+.sponsors li{
+    border: 1px solid #FFe50F;
+    border-radius: 50%;
+    margin: 3em;
+    padding: 4em;
+    height: 10%;
+    width: 10%;
+}
+
+footer{
+    height: 10vh;
 }
