@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxygen', sans-serif;;
+}
+
+header, main, footer{
+    background-color: #260c1a;
+    color: #FFe50F;
+    width: 100%;
+}
+
+.pantalla__inicio{
+    height: 50vh;
+}
+
+ul li {
+    display: inline;
+}
+
+section{
+    height: 40vh;
+    border: 1px solid #FFe50F;
+}
+
