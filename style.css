@@ -1,52 +1,153 @@
+/* Estilos Generales */
+
 *{
     margin: 0;
-    padding: 0;
-    font-family: 'Oxygen', sans-serif;;
+    /* padding: 0; */
+    font-family: 'Oxygen', sans-serif;
 }
 
 header, main, footer{
-    background-color: #260c1a;
-    color: #FFe50F;
+    background-color: lightgray;
+    color: black;
     width: 100%;
 }
 
-.pantalla__inicio{
-    height: 60vh;
+
+/* Estilos de navegador */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9vw;
+    width: 100%;
+    background-color: black;
+}
+
+
+.navegacion button{
+    font-size: 1.5em;
+    font-family: 'Oxygen', sans-serif;;
+}
+
+.logo{
+    justify-self: flex-start;
+    height: 10vh;
+    width: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px red solid;
+    width: 60%;
+}
+
+
+
+
+
+/* Inicio */
+
+.pantalla_inicio{
+    height: 50vh;
     background-image: url(images/fondo_inicio.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
-    color: aliceblue;
-    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-ul li {
-    display: inline;
+.pantalla.titulo{
+    color: aliceblue;
+    font-size: 4em;
+    
 }
+
+.pantalla.presentacion {
+    color: aliceblue;
+    width: 50%;
+    text-align: justify;
+}
+
+
+
+/* Secciones */
 
 section{
-    height: 40vh;
+    height: 45vh;
     border: 1px solid #FFe50F;
-    padding: 2em;
+    /* padding: 2em; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: justify;
+}
+
+section div{
+    width: 40%;
+}
+
+section h2{
+    font-size: 3em;
+    text-align: center;
+    margin: 1%;
+}
+
+.orientacion2{
+    flex-direction: row-reverse;
 }
 
 .imagen {
     height: 90%;
-    width: auto;
-    display: inline;
+}
+
+
+
+
+
+/* Sponsors */
+
+.sponsors{
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    height: 15vh;
+}
+
+.sponsors h2{
+    font-size: 1.5vw;
+    padding: 0;
+    border: solid red 1px;
+    margin: 0;
 }
 
 #sponsors li{
     border: 1px solid #FFe50F;
     border-radius: 50%;
-    margin: 3em;
-    padding: 4em;
-    height: 10%;
-    width: 10%;
+    height: 2vh;
+    width: auto;
+    padding: 2vw;
+
+}
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+    border: red 1px solid;
 }
 
-footer{
-    height: 10vh;
-}
+
+
 
 .img_servicios{
     height: 200px;
@@ -55,4 +156,89 @@ footer{
 
 .sect_servicios{
     border: #FFe50F solid 1px;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .pantalla_inicio{
+        height: 40vh;
+    }
+    .pantalla.titulo{
+        font-size: 2em;     
+    }
+    
+    .pantalla.presentacion {
+        text-align: justify;
+        font-size: 0.8em;
+    }
+
+
+    section{
+        height: 30vh;
+        font-size: 0.8em;
+    }
+
+    section h2{
+        font-size: 3em;
+        text-align: center;
+        margin: 1%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 425px) {
+
+    *{
+        font-size: 1em;
+    }
+
+    nav h3 {
+        margin-left: 0;
+    }
+
+    .pantalla_inicio{
+        height: 25vh;
+    }
+    .pantalla.titulo{
+        font-size: 2em;     
+    }
+    
+    .pantalla.presentacion {
+        text-align: justify;
+        font-size: 0.1em;
+    }
+
+
+    section{
+        padding: 0;
+        height: 70em;
+        font-size: 0.2em;
+    }
+
+    section h2{
+        font-size: 8em;
+        text-align: center;
+        margin: 0;
+    }
+
+    section div{
+        width: 90%;
+    }
+
+    .orientacion2,.orientacion1{
+        flex-direction: column-reverse;
+    }
+    .orientacion1 h2{
+        text-align: left;
+    }
+    .orientacion2 h2{
+        text-align: right;
+    }
+    
+    .imagen{
+        height: 65%;
+        margin: 0;
+    }
 }
