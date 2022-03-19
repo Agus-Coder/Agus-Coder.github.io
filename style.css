@@ -32,6 +32,7 @@ section{
 .imagen {
     height: 90%;
     width: auto;
+    display: inline;
 }
 
 #sponsors li{
