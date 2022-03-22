@@ -29,7 +29,7 @@ body{
 }
 
 header, main, footer{
-    background-color: lightgray;
+    background-color: rgba(240, 196, 113, 0.116);
     color: black;
     width: 100%;
 }
