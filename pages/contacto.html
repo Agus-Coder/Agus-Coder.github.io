@@ -15,10 +15,9 @@
     <header>
         <nav>
             <h3>
-                <a href="../index.html"><img src="../logo.jpeg" alt="Baires Wines Logo"
-                        style="height: 10vh; width: auto;"></a>
+                <a href="../index.html"><img class="logo" src="../logo2.jpeg" alt="Baires Wines Logo"></a>
             </h3>
-            <ul>
+            <ul class="navegacion">
                 <li><a href="nosotros.html"><button>Nosotros</button></a></li>
                 <li><a href="eventos.html"><button>Eventos</button></a></li>
                 <li><a href="servicios.html"><button>Servicios</button></a></li>
@@ -28,21 +27,20 @@
     </header>
 
     <main>
+        <div id="consultas">
+            <form action="" method="post" class="consultas">
 
-        <form action="" method="post">
+                <label for="nombre_usuario">Nombre:</label>
+                <input type="text" name="name" id="nombre_usuario" placeholder="Ingrese su nombre">
+                <label for="mail_usuario">E-mail:</label>
+                <input type="email" name="mail" id="mail_usuario" placeholder="ejemplo@ejemplo.com">
+                <label for="msg">Mensaje:</label>
+                <textarea name="user_message" id="msg" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
 
+                <button type="submit">Enviar mensaje</button>
 
-            <label for="nombre_usuario">Nombre:</label>
-            <input type="text" name="name" id="nombre_usuario" placeholder="Ingrese su nombre">
-            <label for="mail_usuario">E-mail:</label>
-            <input type="email" name="mail" id="mail_usuario" placeholder="ejemplo@ejemplo.com">
-            <label for="msg">Mensaje:</label>
-            <textarea name="user_message" id="msg" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
-
-            <button type="submit">Enviar mensaje</button>
-
-
-        </form>
+            </form>
+        </div>
     </main>
 
     <!-- Seccion footer -->

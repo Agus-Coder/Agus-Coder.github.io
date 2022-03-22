@@ -1,9 +1,31 @@
-/* Estilos Generales */
+/* INSTRUCCIONES: COMO LEER ESTE CSS */
+/* Juan, espero que estes muy bien! Te dejo esta intro para contarte como est[a organizado el CSS */
 
+/* Primero hay una seccion de estilos generales que se aplican a todos los archivos html */
+/* Luego siguen secciones de CSS para cada pagina por separado, cuestion de que te sea mas facil corregir */
+
+
+
+
+/* Estilos Generales de toda la web*/
 *{
     margin: 0;
     /* padding: 0; */
     font-family: 'Oxygen', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "inicio"
+    "fila1"
+    "fila2"
+    "fila3"
+    "fila4"
+    "sponsors"
+    "footer"
+    ;
 }
 
 header, main, footer{
@@ -11,9 +33,6 @@ header, main, footer{
     color: black;
     width: 100%;
 }
-
-
-/* Estilos de navegador */
 
 nav{
     display: flex;
@@ -23,8 +42,47 @@ nav{
     font-size: 0.9vw;
     width: 100%;
     background-color: black;
+    grid-area: nav;
 }
 
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+section{
+    height: 45vh;
+    /* border: 1px solid #FFe50F; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: justify;
+}
+
+section div{
+    width: 70%;
+}
+
+section h2{
+    font-size: 3em;
+    text-align: center;
+    margin: 1%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 7vh;
+    color: lightgray;
+    background-color: black;
+}
 
 .navegacion button{
     font-size: 1.5em;
@@ -37,20 +95,32 @@ nav{
     width: auto;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    border: 1px red solid;
-    width: 60%;
+.imagen {
+    height: 18em;
+}
+
+#fila1{
+    grid-area: fila1;
+}
+
+#fila2{
+    grid-area: fila2;
+}
+
+#fila3{
+    grid-area: fila3;
+}
+
+#fila4{
+    grid-area: fila4;
 }
 
 
 
 
 
-/* Inicio */
+
+/* Estilos Index */
 
 .pantalla_inicio{
     height: 50vh;
@@ -61,6 +131,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    grid-area: inicio;    
 }
 
 .pantalla.titulo{
@@ -75,88 +146,116 @@ ul {
     text-align: justify;
 }
 
-
-
-/* Secciones */
-
-section{
-    height: 45vh;
-    border: 1px solid #FFe50F;
-    /* padding: 2em; */
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: justify;
-}
-
-section div{
-    width: 40%;
-}
-
-section h2{
-    font-size: 3em;
-    text-align: center;
-    margin: 1%;
-}
-
 .orientacion2{
     flex-direction: row-reverse;
 }
 
-.imagen {
-    height: 90%;
-}
-
-
-
-
-
-/* Sponsors */
-
 .sponsors{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
     padding: auto;
-    height: 15vh;
+    grid-area: sponsors;
 }
 
 .sponsors h2{
     font-size: 1.5vw;
     padding: 0;
-    border: solid red 1px;
     margin: 0;
 }
 
-#sponsors li{
-    border: 1px solid #FFe50F;
-    border-radius: 50%;
-    height: 2vh;
+#sponsor{
+    height: 20vh;
     width: auto;
-    padding: 2vw;
-
+    border-radius: 50%;
 }
-/* Footer */
 
-footer {
+
+
+
+
+
+/* Estilos Nosotros */
+
+.nosotros_fila2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+}
+
+
+
+
+/* Estilos Eventos */
+
+.seccion_eventos{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.imagenes_eventos{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 7vh;
-    border: red 1px solid;
+    gap: 2em;
 }
 
 
 
 
-.img_servicios{
-    height: 200px;
-    width: auto;
+
+
+/* Estilos Servicios */
+.servicios{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
 }
 
-.sect_servicios{
-    border: #FFe50F solid 1px;
+.superior, .superior2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.superior2{
+    flex-direction: row-reverse;
+}
+
+.servicios p{
+    width: 60%;
+}
+
+.servicios button{
+    display: inline-block;
+}
+
+
+
+
+
+
+/* Estilos Contacto */
+#consultas{
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+}
+.consultas{
+    display: grid;
+    height: 80%;
+}
+
+form{
+    width: 30%;
+}
+
+
+
+
+/* Responsive Design Styles */
 
 @media screen and (max-width: 768px) {
 
@@ -199,7 +298,7 @@ footer {
     }
 
     .pantalla_inicio{
-        height: 25vh;
+        height: 20vh;
     }
     .pantalla.titulo{
         font-size: 2em;     
