@@ -141,7 +141,7 @@ footer {
 
 .pantalla.presentacion {
     color: aliceblue;
-    width: 50%;
+    width: 70%;
     text-align: justify;
 }
 
@@ -163,10 +163,11 @@ footer {
     margin: 0;
 }
 
-#sponsor{
+.sponsor{
     height: 20vh;
     width: auto;
     border-radius: 50%;
+
 }
 
 
@@ -400,43 +401,41 @@ form{
     }
 
     .pantalla_inicio{
-        height: 40vh;
+        height: 20vh;
     }
     .pantalla.titulo{
-        font-size: 5em;     
+        font-size: 2em;     
     }
     
     .pantalla.presentacion {
         text-align: justify;
-        font-size: 1em;
+        font-size: 0.5em;
     }
 
+    /* Estilos Index */
 
-    section{
-        padding: 0;
-        height: 18em;
-        font-size: 1em;
-        
+    .orientacion1, .orientacion2{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        margin-top: 3vh;
     }
 
-    section h2{
-        font-size: 3em;
-        text-align: center;
-        margin: 0;
-    }
-
-    section div{
-        width: 90%;
-    }
-    
-    .imagen{
-        height: 25vh;
-        margin: 0;
+    .orientacion2{
+        flex-direction: column;
     }
 
     .sponsors h2{
-        font-size: 4vh;
+        font-size: 1.5em;
     }
+
+    #sponsor{
+        height: 10vh;
+        width: auto;
+        border-radius: 50%;
+    }
+
+
 
 
     /* Estilos Nosotros */
