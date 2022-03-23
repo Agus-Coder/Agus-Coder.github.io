@@ -391,16 +391,12 @@ form{
         font-size: 1em;
     }
 
-    nav h3 {
-        margin-left: 10vw;
-    }
-
     .navegacion{
         width: 70%;
     }
 
     .navegacion button{
-        font-size: 5em;
+        font-size: 3em;
     }
 
     .pantalla_inicio{
