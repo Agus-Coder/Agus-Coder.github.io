@@ -188,11 +188,12 @@ footer {
 .nosotros_imagenes{
     grid-column: 1/3;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
     margin-bottom: 3vh;
+    width: auto;
 }
 
 
@@ -209,10 +210,17 @@ footer {
 .seccion_eventos h3{
     font-size: 2em;
 }
+.seccion_eventos p{
+    width: 70%;
+    text-align: justify;
+    margin-top: 2vh;
+}
+
 
 .imagenes_eventos{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2em;
@@ -228,6 +236,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 2vh;
+    height: auto;
 }
 
 .superior, .superior2{
@@ -266,8 +275,10 @@ footer {
 }
 
 form{
-    width: 30%;
+    width: 50%;
 }
+
+
 
 
 
@@ -275,6 +286,19 @@ form{
 /* Responsive Design Styles */
 
 @media screen and (max-width: 768px) {
+
+    *{
+        font-size: 1em;
+    }
+
+
+    .navegacion{
+        width: 70%;
+    }
+
+    .navegacion button{
+        font-size: 3em;
+    }
 
 
     .pantalla_inicio{
@@ -301,7 +325,64 @@ form{
         margin: 1%;
     }
     
+    .nosotros_fila1{
+        height: auto;
+    }
+
+
+
+
+
+
+    /* Estilos Eventos */
+    .seccion_eventos{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .seccion_eventos h3{
+        font-size: 2em;
+    }
+
+    .seccion_eventos p{
+        width: 70%;
+        text-align: justify;
+        margin-top: 2vh;
+        font-size: 1.5em;
+    }
+        
+
+
+    /* Estilos Servicios */
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        padding: 2vh;
+        height: auto;
+    }
     
+    .superior, .superior2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .superior h3, .superior2 h3{
+        font-size: 2em;
+    }
+   
+    .servicios p{
+        width: 80%;
+    }
+
+
+    /* Estilos Contacto */
+    form{
+        width: 80%;
+    }
+
+
 }
 
 @media screen and (max-width: 425px) {
@@ -378,10 +459,14 @@ form{
         width: 70%;
     }
     .nosotros_imagenes{
+        margin-top: 4vh;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+
+
+    /* Estilos Eventos */
 
     .seccion_eventos{
         display: grid;
@@ -393,21 +478,40 @@ form{
 
     }
     .seccion_eventos p{
-        font-size: 1em;
+        font-size: 1.3em;
         width: 90%;
         height: auto;
         margin: 3vh 0;
-    }
+    }   
     
-    .imagenes_eventos{
+
+    /* Estilos Servicios */
+    .servicios{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
+        padding: 2vh;
+        height: auto;
     }
     
+    .superior, .superior2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .superior h3, .superior2 h3{
+        font-size: 2em;
+    }
+   
+    .servicios p{
+        width: 80%;
+    }
+    
+
+    /* Estilos Contacto */
     form{
         width: 80%;
     }
+
+
 }
