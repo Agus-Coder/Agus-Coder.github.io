@@ -54,8 +54,7 @@ ul {
 }
 
 section{
-    height: 45vh;
-    /* border: 1px solid #FFe50F; */
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -79,14 +78,14 @@ footer {
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
-    height: 7vh;
+    height: auto;
+    padding: 3vh 0vh;
     color: lightgray;
     background-color: black;
 }
 
 .navegacion button{
     font-size: 1.5em;
-    font-family: 'Oxygen', sans-serif;;
 }
 
 .logo{
@@ -177,10 +176,23 @@ footer {
 
 /* Estilos Nosotros */
 
-.nosotros_fila2{
+.nosotros_fila1{
+    grid-template-rows: 1fr 1fr;
+    margin-top: 3vh;
+}
+.nosotros_fila1 p{
+    grid-column: 1/3;
+    width: 50%;
+}
+
+.nosotros_imagenes{
+    grid-column: 1/3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 3vh;
 }
 
 
@@ -191,6 +203,11 @@ footer {
 .seccion_eventos{
     display: grid;
     grid-template-columns: 1fr;
+    height: auto;
+    margin: 5vh 0vh;
+}
+.seccion_eventos h3{
+    font-size: 2em;
 }
 
 .imagenes_eventos{
@@ -294,30 +311,39 @@ form{
     }
 
     nav h3 {
-        margin-left: 0;
+        margin-left: 10vw;
+    }
+
+    .navegacion{
+        width: 70%;
+    }
+
+    .navegacion button{
+        font-size: 5em;
     }
 
     .pantalla_inicio{
-        height: 20vh;
+        height: 40vh;
     }
     .pantalla.titulo{
-        font-size: 2em;     
+        font-size: 5em;     
     }
     
     .pantalla.presentacion {
         text-align: justify;
-        font-size: 0.1em;
+        font-size: 1em;
     }
 
 
     section{
         padding: 0;
-        height: 70em;
-        font-size: 0.2em;
+        height: 18em;
+        font-size: 1em;
+        
     }
 
     section h2{
-        font-size: 8em;
+        font-size: 3em;
         text-align: center;
         margin: 0;
     }
@@ -325,19 +351,63 @@ form{
     section div{
         width: 90%;
     }
-
-    .orientacion2,.orientacion1{
-        flex-direction: column-reverse;
-    }
-    .orientacion1 h2{
-        text-align: left;
-    }
-    .orientacion2 h2{
-        text-align: right;
-    }
     
     .imagen{
-        height: 65%;
+        height: 25vh;
         margin: 0;
+    }
+
+    .sponsors h2{
+        font-size: 4vh;
+    }
+
+
+    /* Estilos Nosotros */
+
+    .nosotros.imagen{
+        width: 80%;
+        height: auto;
+    }
+
+    .nosotros_fila1{
+        grid-template-rows: 1fr 1fr;
+        height: auto;
+    }
+    .nosotros_fila1 p{
+        grid-column: 1/3;
+        width: 70%;
+    }
+    .nosotros_imagenes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .seccion_eventos{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 2vh 0;
+    }
+    .seccion_eventos h3{
+        font-size: 2em;
+
+    }
+    .seccion_eventos p{
+        font-size: 1em;
+        width: 90%;
+        height: auto;
+        margin: 3vh 0;
+    }
+    
+    .imagenes_eventos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    
+    form{
+        width: 80%;
     }
 }
