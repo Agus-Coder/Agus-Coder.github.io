@@ -424,11 +424,11 @@ form{
         flex-direction: column;
     }
 
-    .sponsors h2{
+    #sponsors h2{
         font-size: 1.5em;
     }
 
-    #sponsor{
+    .sponsor{
         height: 10vh;
         width: auto;
         border-radius: 50%;
