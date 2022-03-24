@@ -149,7 +149,7 @@ footer {
     flex-direction: row-reverse;
 }
 
-.sponsors{
+#sponsors{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
@@ -157,17 +157,16 @@ footer {
     grid-area: sponsors;
 }
 
-.sponsors h2{
+#sponsors h2{
     font-size: 1.5vw;
     padding: 0;
     margin: 0;
 }
 
-#sponsor{
+.sponsor{
     height: 20vh;
     width: auto;
     border-radius: 50%;
-
 }
 
 
