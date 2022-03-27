@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
-    <script src="js-file.js"></script>
 
+    <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <title>Baires Wines</title>
 </head>
@@ -46,7 +47,7 @@
         </div>
 
         <!-- Seccion "Nosotros" -->
-        <section id="fila1" class="orientacion1">
+        <section id="fila1" class="wow animate__animated animate__slideInRight animate__delay-0.6s orientacion1">
             <div>
                 <h2>Nosotros</h2>
                 <article>
@@ -63,7 +64,7 @@
         </section>
 
         <!-- Seccion "Eventos" -->
-        <section id="fila2" class="orientacion2">
+        <section id="fila2" class="wow animate__animated animate__slideInLeft animate__delay-1s orientacion2">
             <img class="imagen" src="images/eventos.jpg" alt="eventos">
             <div>
                 <h2>Eventos</h2>
@@ -80,7 +81,7 @@
         </section>
 
         <!-- Seccion "Servicios" -->
-        <section id="fila3" class="orientacion1">
+        <section id="fila3" class="wow animate__animated animate__slideInRight animate__delay-0.5s orientacion1">
             <div>
                 <h2>Servicios</h2>
                 <article>
@@ -97,7 +98,7 @@
         </section>
 
         <!-- Seccion "Contactos" -->
-        <section id="fila4" class="orientacion2">
+        <section id="fila4" class="wow animate__animated animate__slideInLeft animate__delay-0.5s orientacion2">
             <img class="imagen" src="images/contacto.jpeg" alt="contacto">
             <div>
                 <h2>Contacto</h2>
@@ -115,13 +116,20 @@
         </section>
 
         <!-- Seccion "Sponsors" -->
-        <section id="sponsors">
+        <section id="sponsors" class="wow animate__animated animate__slideInUp">
             <h2>Nuestros Sponsors</h2>
             <ul class="sponsors">
-                <li><img class="sponsor" src="./images/sponsor1.jpg" alt=""> <p>Copas Glass</p></li>
-                <li><img class="sponsor" src="./images/sponsor2.jpg" alt=""> <p>Bodega Sutter</p></li>
-                <li><img class="sponsor" src="./images/sponsor3.jpg" alt=""> <p>Bodega HueMul</p></li>
-                <li><img class="sponsor" src="./images/sponsor4.jpg" alt=""> <p>Uvas Laprida</p</li>
+                <li><img class="sponsor" src="./images/sponsor1.jpg" alt="">
+                    <p>Copas Glass</p>
+                </li>
+                <li><img class="sponsor" src="./images/sponsor2.jpg" alt="">
+                    <p>Bodega Sutter</p>
+                </li>
+                <li><img class="sponsor" src="./images/sponsor3.jpg" alt="">
+                    <p>Bodega HueMul</p>
+                </li>
+                <li><img class="sponsor" src="./images/sponsor4.jpg" alt="">
+                    <p>Uvas Laprida</p< /li>
             </ul>
         </section>
 
@@ -135,6 +143,12 @@
             <li>Copyright 2022</li>
         </ul>
     </footer>
+
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>

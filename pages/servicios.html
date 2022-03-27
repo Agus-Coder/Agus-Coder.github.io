@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+
+    <link rel="shortcut icon" href="../favicon.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <title>Servicios</title>
 </head>
 
@@ -27,7 +35,7 @@
     </header>
 
     <main>
-        <section id="fila1" class="servicios">
+        <section id="fila1" class="wow animate__animated animate__slideInLeft servicios">
             <div class="superior">
                 <h3>Para empresas</h3>
                 <img class="imagen" src="../images/vino-eventos-corporativos.jpg" alt="">
@@ -37,7 +45,7 @@
             <button><a href="#">Consultanos!</a></button>
         </section>
 
-        <section id="fila2" class="servicios">
+        <section id="fila2" class="wow animate__animated animate__slideInRight servicios">
             <div class="superior2">
                 <h3>Eventos privados</h3>
                 <img class="imagen" src="../images/Eventos_Privados.jpeg" alt="">
@@ -48,7 +56,7 @@
             <button><a href="#">Consultanos!</a></button>
         </section>
 
-        <section id="fila3" class="servicios">
+        <section id="fila3" class="wow animate__animated animate__slideInLeft servicios">
             <div class="superior">
                 <h3>Catas en barco</h3>
                 <img class="imagen" src="../images/Cata_Barco.jpeg" alt="">
@@ -70,6 +78,11 @@
             <li>Copyright 2022</li>
         </ul>
     </footer>
+
+    <script src="../wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 

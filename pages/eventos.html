@@ -6,7 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+
+    <link rel="shortcut icon" href="../favicon.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <title>Eventos</title>
+
 </head>
 
 <body>
@@ -27,7 +36,7 @@
     </header>
 
     <main>
-        <section id="fila1" class="seccion_eventos">
+        <section id="fila1" class="wow animate__animated animate__slideInUp seccion_eventos">
             <h3>Catas en barco</h3>
             <div id="imagenes_eventos" class="imagenes_eventos">
                 <img class="imagen" src="../images/Cata en barco 1.jpeg" alt="">
@@ -38,7 +47,7 @@
                 culpa magni praesentium explicabo inventore possimus eligendi rerum ut neque ex eaque aliquid harum
                 quidem?</p>
         </section>
-        <section id="fila2" class="seccion_eventos">
+        <section id="fila2" class="wow animate__animated animate__slideInLeft seccion_eventos">
             <h3>Wine Fests</h3>
             <div class="imagenes_eventos">
                 <img class="imagen" src="../images/winefest2.jpg" alt="">
@@ -50,7 +59,7 @@
                 culpa magni praesentium explicabo inventore possimus eligendi rerum ut neque ex eaque aliquid harum
                 quidem?</p>
         </section>
-        <section id="fila3" class="seccion_eventos">
+        <section id="fila3" class="wow animate__animated animate__slideInRight seccion_eventos">
             <h3>Catas Privadas</h3>
             <div class="imagenes_eventos">
                 <img class="imagen" src="../images/Catapriv1.jpg" alt="">
@@ -73,6 +82,11 @@
             <li>Copyright 2022</li>
         </ul>
     </footer>
+
+    <script src="../wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 
