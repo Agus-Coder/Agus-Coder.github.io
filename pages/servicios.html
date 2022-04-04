@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../style.css">
 
     <link rel="shortcut icon" href="../favicon.jpeg" type="image/x-icon">
@@ -21,11 +24,11 @@
 
     <!-- Seccion header, con logo y barra de navegacion -->
     <header>
-        <nav>
+        <nav id="navbarToggleExternalContent">
             <h3>
                 <a href="../index.html"><img class="logo" src="../logo2.jpeg" alt="Baires Wines Logo"></a>
             </h3>
-            <ul class="navegacion">
+            <ul class="navegacion" >
                 <li><a href="nosotros.html"><button>Nosotros</button></a></li>
                 <li><a href="eventos.html"><button>Eventos</button></a></li>
                 <li><a href="servicios.html"><button>Servicios</button></a></li>
@@ -34,8 +37,8 @@
         </nav>
     </header>
 
-    <main>
-        <section id="fila1" class="wow animate__animated animate__slideInLeft servicios">
+    <main class="container col-md-12">
+        <section id="fila1" class="wow animate__animated animate__slideInLeft servicios container col-md-12 col-xs-12">
             <div class="superior">
                 <h3>Para empresas</h3>
                 <img class="imagen" src="../images/vino-eventos-corporativos.jpg" alt="">
@@ -45,7 +48,7 @@
             <button><a href="#">Consultanos!</a></button>
         </section>
 
-        <section id="fila2" class="wow animate__animated animate__slideInRight servicios">
+        <section id="fila2" class="wow animate__animated animate__slideInRight servicios container col-md-12 col-xs-12">
             <div class="superior2">
                 <h3>Eventos privados</h3>
                 <img class="imagen" src="../images/Eventos_Privados.jpeg" alt="">
@@ -56,7 +59,7 @@
             <button><a href="#">Consultanos!</a></button>
         </section>
 
-        <section id="fila3" class="wow animate__animated animate__slideInLeft servicios">
+        <section id="fila3" class="wow animate__animated animate__slideInLeft servicios container col-md-12 col-xs-12">
             <div class="superior">
                 <h3>Catas en barco</h3>
                 <img class="imagen" src="../images/Cata_Barco.jpeg" alt="">
@@ -83,6 +86,8 @@
     <script>
         new WOW().init();
     </script>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

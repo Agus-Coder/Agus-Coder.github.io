@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../style.css">
     <title>Contacto</title>
 </head>
@@ -27,7 +30,23 @@
     </header>
 
     <main>
-        <div id="consultas">
+        <h2>Contacto</h2>
+        <p>Dejanos tus datos para que un asesor se ponga en contacto con vos</p>
+        <div class="container col-md-8 col-xs-4">
+
+            <label for="formControlInput" class="form-label">Nombre</label>
+            <input type="user_name" class="form-control" id="formControlInput" placeholder="Nombre">
+
+            <label for="formControlInput" class="form-label">Apellido</label>
+            <input type="user_surname" class="form-control" id="formControlInput" placeholder="Apellido">
+
+            <label for="formControlInput" class="form-label">Correo Electronico</label>
+            <input type="email" class="form-control" id="formControlInput" placeholder="name@example.com">
+
+
+        </div>
+
+        <!-- <div id="consultas">
             <form action="" method="post" class="consultas">
 
                 <label for="nombre_usuario">Nombre:</label>
@@ -40,7 +59,7 @@
                 <button type="submit">Enviar mensaje</button>
 
             </form>
-        </div>
+        </div> -->
     </main>
 
     <!-- Seccion footer -->
@@ -51,6 +70,8 @@
             <li>Copyright 2022</li>
         </ul>
     </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

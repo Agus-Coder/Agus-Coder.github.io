@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
     <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
@@ -14,14 +17,16 @@
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
 
 
     <title>Baires Wines</title>
 </head>
 
 <body>
-
+   
     <!-- Seccion header, con logo y barra de navegacion -->
     <header>
         <nav>
@@ -119,7 +124,26 @@
         </section>
 
         <!-- Seccion "Sponsors" -->
-        <section id="sponsors" class="wow animate__animated animate__slideInUp">
+
+        <h2 class="d-flex justify-content-center">Nuestros Sponsors</h2>
+
+        <div id="carouselSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner d-flex justify-content-center align-items-center">
+              <div class="carousel-item active">
+               <a href="#"><img src="./images/sponsor2.jpg" class="d-block" alt="Slide 1"></a> 
+              </div>
+              <div class="carousel-item">
+                <a href="#"><img src="./images/sponsor3.jpg" class="d-block" alt="Slide 1"></a> 
+              </div>
+              <div class="carousel-item">
+                <a href="#"><img src="./images/sponsor4.jpg" class="d-block" alt="Slide 1"></a> 
+              </div>
+            </div>
+        </div>
+
+
+
+        <!-- <section id="sponsors" class="wow animate__animated animate__slideInUp">
             <h2>Nuestros Sponsors</h2>
             <ul class="sponsors">
                 <li><img class="sponsor" src="./images/sponsor1.jpg" alt="">
@@ -135,7 +159,7 @@
                     <p>Uvas Laprida</p>
                 </li>
             </ul>
-        </section>
+        </section> -->
 
     </main>
 
@@ -153,7 +177,7 @@
         new WOW().init();
     </script>
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
