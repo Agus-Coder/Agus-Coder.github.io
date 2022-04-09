@@ -1,0 +1,25 @@
+.seccion_eventos {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    margin: 5vh 0vh;
+
+    h3 {
+        font-size: 2em;
+    }
+
+    p {
+        width: 70%;
+        text-align: justify;
+        margin-top: 2vh;
+    }
+}
+
+.imagenes_eventos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}

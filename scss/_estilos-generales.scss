@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    font-family: 'Arvo', serif;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "inicio"
+        "fila1"
+        "fila2"
+        "fila3"
+        "fila4"
+        "sponsors"
+        "footer"
+    ;
+}
+
+header,
+main,
+footer {
+    color: lightgray;
+    background-color: black;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9vw;
+    width: 100%;
+    background-color: black;
+    grid-area: nav;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+section {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: justify;
+    margin: 3em 3em;
+
+    div {
+        width: 70%;
+    }
+
+    h2 {
+        font-size: 3em;
+        text-align: center;
+        margin: 1%;
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+    padding: 3vh 0vh;
+    color: lightgray;
+    background-color: black;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    justify-items: center;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    button {
+        font-size: 1.5em;
+        transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
+        border: none;
+        border-radius: 4px;
+
+        &:hover {
+            background-color: black;
+            color: lightgray;
+            text-decoration: underline;
+        }
+    }
+}
+
+.logo {
+    justify-self: flex-start;
+    height: 10vh;
+    width: auto;
+}
+
+.imagen {
+    height: 18em;
+    transition: transform .4s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+button {
+    background-color: #5E1224;
+    border: none;
+    border-radius: 4px;
+    color: lightgray;
+}
