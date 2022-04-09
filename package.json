@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Agus-Coder/Agus-Coder.github.io/issues"
   },
-  "homepage": "https://github.com/Agus-Coder/Agus-Coder.github.io#readme"
+  "homepage": "https://github.com/Agus-Coder/Agus-Coder.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
 }
