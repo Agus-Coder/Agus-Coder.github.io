@@ -123,3 +123,11 @@ button {
     border-radius: 4px;
     color: lightgray;
 }
+
+main{
+    h1{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,25 @@
+.nosotros_fila1{
+    grid-template-rows: 1fr 1fr;
+    margin-top: 3vh;
+
+    p{
+        grid-column: 1/3;
+        width: 50%;
+    }
+
+}
+
+.nosotros_fila2{
+    height: auto;
+}
+
+.nosotros_imagenes{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 3vh;
+    width: auto;
+}

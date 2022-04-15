@@ -93,6 +93,73 @@ button {
   border-radius: 4px;
   color: lightgray; }
 
+main h1 {
+  display: grid;
+  align-items: center;
+  justify-content: center; }
+
+.pantalla_inicio {
+  height: 50vh;
+  background-image: url(../images/fondo_inicio.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  grid-area: inicio; }
+
+.titulo {
+  color: aliceblue;
+  font-size: 4em;
+  font-weight: 700;
+  margin-left: 0.5em; }
+
+.presentacion {
+  color: aliceblue;
+  width: 50%;
+  text-align: justify;
+  margin-left: 4em; }
+
+.orientacion2 {
+  flex-direction: row-reverse; }
+
+#sponsors {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  padding: auto;
+  grid-area: sponsors; }
+  #sponsors h2 {
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0; }
+
+.sponsor {
+  height: 20vh;
+  width: auto;
+  border-radius: 50%; }
+
+.nosotros_fila1 {
+  grid-template-rows: 1fr 1fr;
+  margin-top: 3vh; }
+  .nosotros_fila1 p {
+    grid-column: 1/3;
+    width: 50%; }
+
+.nosotros_fila2 {
+  height: auto; }
+
+.nosotros_imagenes {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 3vh;
+  width: auto; }
+
 .seccion_eventos {
   display: grid;
   grid-template-columns: 1fr;
@@ -112,3 +179,180 @@ button {
   justify-content: center;
   align-items: center;
   gap: 2em; }
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
+  height: auto; }
+  .servicios p {
+    width: 60%; }
+  .servicios button {
+    display: inline-block; }
+
+.superior, .superior2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.superior2 {
+  flex-direction: row-reverse; }
+
+#consultas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+  justify-items: center;
+  align-items: center;
+  height: 78vh;
+  padding: 2vh; }
+
+.consultas {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 40vh; }
+
+form {
+  width: 50%; }
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 1em; }
+  .navegacion {
+    width: 70%; }
+    .navegacion button {
+      font-size: 3em; }
+  .pantalla_inicio {
+    height: 40vh; }
+  .pantalla.titulo {
+    font-size: 2em; }
+  .pantalla.presentacion {
+    text-align: justify;
+    font-size: 0.8em; }
+  section {
+    height: 30vh;
+    font-size: 0.8em; }
+    section h2 {
+      font-size: 3em;
+      text-align: center;
+      margin: 1%; }
+  .orientacion1 {
+    margin: 3vh 3vh; }
+  .orientacion2 {
+    margin: 3vh 3vh; }
+  .sponsor {
+    height: 15vh; }
+  .nosotros_fila1 {
+    height: auto; }
+  .seccion_eventos {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto; }
+    .seccion_eventos h3 {
+      font-size: 2em; }
+    .seccion_eventos p {
+      width: 70%;
+      text-align: justify;
+      margin-top: 2vh;
+      font-size: 1.5em; }
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    height: auto; }
+    .servicios p {
+      width: 80%; }
+  .superior, .superior2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .superior h3, .superior2 h3 {
+      font-size: 2em; }
+  .superior2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .superior2 h3 {
+      font-size: 2em; }
+  /* Estilos Contacto */
+  form {
+    width: 80%; } }
+
+@media screen and (max-width: 425px) {
+  * {
+    font-size: 1em; }
+  .navegacion {
+    width: 70%; }
+    .navegacion button {
+      font-size: 3em; }
+  .pantalla_inicio {
+    height: 20vh;
+    width: auto;
+    background-image: url(images/fondo_inicio.jpg); }
+  .pantalla.titulo {
+    font-size: 2em;
+    width: 50%; }
+  .pantalla.presentacion {
+    text-align: justify;
+    font-size: 0.5em; }
+  .orientacion1,
+  .orientacion2 {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    margin-top: 3vh; }
+  .orientacion2 {
+    flex-direction: column; }
+  #sponsors h2 {
+    font-size: 1.5em; }
+  .sponsor {
+    height: 7vh;
+    width: auto;
+    border-radius: 50%; }
+  .nosotros.imagen {
+    width: 80%;
+    height: auto; }
+  .nosotros_fila1 {
+    grid-template-rows: 1fr 1fr;
+    height: auto; }
+    .nosotros_fila1 p {
+      grid-column: 1/3;
+      width: 70%; }
+  .nosotros_imagenes {
+    margin-top: 4vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; }
+  .seccion_eventos {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2vh 0; }
+    .seccion_eventos h3 {
+      font-size: 2em; }
+    .seccion_eventos p {
+      font-size: 1.3em;
+      width: 90%;
+      height: auto;
+      margin: 3vh 0; }
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0; }
+    .servicios p {
+      width: 80%; }
+  .superior, .superior2,
+  .superior2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .superior h3, .superior2 h3,
+    .superior2 h3 {
+      font-size: 2em; }
+  /* Estilos Contacto */
+  form {
+    width: 80%; } }

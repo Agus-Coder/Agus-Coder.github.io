@@ -1,0 +1,58 @@
+$estilos:(
+    displayF: flex,
+    color: aliceblue,
+    displayG: grid,
+);
+
+
+.pantalla_inicio {
+    height: 50vh;
+    background-image: url(../images/fondo_inicio.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: map-get($estilos, displayF);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    grid-area: inicio;    
+}
+
+
+
+.titulo{
+    color: map-get($estilos, color);
+    font-size: 4em;
+    font-weight: 700;
+    margin-left: 0.5em;
+}
+
+.presentacion {
+    color: map-get($estilos, color);
+    width: 50%;
+    text-align: justify;
+    margin-left: 4em;
+}
+
+.orientacion2{
+    flex-direction: row-reverse;
+}
+
+#sponsors{
+    display: map-get($estilos, displayG);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    padding: auto;
+    grid-area: sponsors;
+
+    h2{
+        font-size: 1.5vw;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.sponsor{
+    height: 20vh;
+    width: auto;
+    border-radius: 50%;
+}
