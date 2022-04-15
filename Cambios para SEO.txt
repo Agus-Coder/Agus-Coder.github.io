@@ -1,0 +1,3 @@
+-Se modificaron los titles en todas las páginas para que los mismos sean mas descriptivos
+-Se agregó una etiqueta meta Keywords en todas las páginas del sitio
+-Se agregó una etiqueta meta description en todos los sitios
