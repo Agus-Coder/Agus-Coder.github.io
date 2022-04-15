@@ -1,3 +1,14 @@
 -Se modificaron los titles en todas las páginas para que los mismos sean mas descriptivos
 -Se agregó una etiqueta meta Keywords en todas las páginas del sitio
 -Se agregó una etiqueta meta description en todos los sitios
+- Todas las imágenes del sitio poseen un atributo alt
+- Se optimiza logos e imágenes para disminuir su peso
+
+Tarea:
+
+- Se mejora la distribución de títulos h1, h2 para todo el sitio
+
+
+
+
+- 
