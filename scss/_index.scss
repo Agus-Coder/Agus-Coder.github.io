@@ -1,5 +1,4 @@
-$estilos:(
-    displayF: flex,
+$estilos:(displayF: flex,
     color: aliceblue,
     displayG: grid,
 );
@@ -14,12 +13,12 @@ $estilos:(
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    grid-area: inicio;    
+    grid-area: inicio;
 }
 
 
 
-.titulo{
+.titulo {
     color: map-get($estilos, color);
     font-size: 4em;
     font-weight: 700;
@@ -31,27 +30,50 @@ $estilos:(
     width: 50%;
     text-align: justify;
     margin-left: 4em;
+
 }
 
-.orientacion2{
+
+.orientacion1{
+    div {
+        a {
+            button {
+                font-size: 1.5em;
+                transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
+                border: none;
+                border-radius: 4px;
+                margin: 1.5em 0 0 0 ;
+    
+                &:hover {
+                    background-color: black;
+                    color: lightgray;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.orientacion2 {
     flex-direction: row-reverse;
+    @extend .orientacion1
 }
 
-#sponsors{
+#sponsors {
     display: map-get($estilos, displayG);
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
     padding: auto;
     grid-area: sponsors;
 
-    h2{
+    h2 {
         font-size: 1.5vw;
         padding: 0;
         margin: 0;
     }
 }
 
-.sponsor{
+.sponsor {
     height: 20vh;
     width: auto;
     border-radius: 50%;
