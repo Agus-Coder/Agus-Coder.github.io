@@ -242,6 +242,9 @@ form {
 @media screen and (max-width: 768px) {
   * {
     font-size: 1em; }
+  main h1 {
+    font-size: 2em;
+    margin: 1em 0; }
   .navegacion {
     width: 70%; }
     .navegacion button {
@@ -378,4 +381,8 @@ form {
       font-size: 2em; }
   /* Estilos Contacto */
   form {
-    width: 80%; } }
+    width: 80%; }
+  #consultas h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 0 -2em 0; } }
