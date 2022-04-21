@@ -3,7 +3,7 @@
     grid-template-columns: $columns;
 }
 
-#consultas{
+#consultas {
     @include displays(grid, 1fr);
 
     grid-template-rows: 1fr 3fr;
@@ -13,12 +13,12 @@
     padding: 2vh;
 }
 
-.consultas{
+.consultas {
     @include displays(grid, 1fr);
 
     height: 40vh;
 }
 
-form{
+form {
     width: 50%;
 }

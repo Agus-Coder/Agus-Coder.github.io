@@ -34,7 +34,7 @@ $estilos:(displayF: flex,
 }
 
 
-.orientacion1{
+.orientacion1 {
     div {
         a {
             button {
@@ -42,8 +42,8 @@ $estilos:(displayF: flex,
                 transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
                 border: none;
                 border-radius: 4px;
-                margin: 1.5em 0 0 0 ;
-    
+                margin: 1.5em 0 0 0;
+
                 &:hover {
                     background-color: black;
                     color: lightgray;
