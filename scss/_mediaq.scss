@@ -70,7 +70,7 @@
         grid-template-columns: 1fr;
         height: auto;
 
-        h3 {
+        h2 {
             font-size: 2em;
         }
 
@@ -147,12 +147,15 @@
 
     .pantalla.titulo {
         font-size: 2em;
-        width: 50%;
+        width: 60%;
+        margin: 0 0 0 0.1em
     }
 
     .pantalla.presentacion {
         text-align: justify;
-        font-size: 0.5em;
+        font-size: 0.8em;
+        margin: 0 0 0 2em
+        
     }
 
     .orientacion1,
@@ -206,7 +209,7 @@
         grid-template-columns: 1fr;
         margin: 2vh 0;
 
-        h3 {
+        h2 {
             font-size: 2em;
         }
 

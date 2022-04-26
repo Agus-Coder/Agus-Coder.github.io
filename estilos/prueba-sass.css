@@ -179,7 +179,7 @@ main h1 {
   .seccion_eventos h3 {
     font-size: 2em; }
   .seccion_eventos p {
-    width: 70%;
+    width: 50%;
     text-align: justify;
     margin-top: 2vh; }
 
@@ -275,7 +275,7 @@ form {
     display: grid;
     grid-template-columns: 1fr;
     height: auto; }
-    .seccion_eventos h3 {
+    .seccion_eventos h2 {
       font-size: 2em; }
     .seccion_eventos p {
       width: 70%;
@@ -320,10 +320,12 @@ form {
     background-image: url(images/fondo_inicio.jpg); }
   .pantalla.titulo {
     font-size: 2em;
-    width: 50%; }
+    width: 60%;
+    margin: 0 0 0 0.1em; }
   .pantalla.presentacion {
     text-align: justify;
-    font-size: 0.5em; }
+    font-size: 0.8em;
+    margin: 0 0 0 2em; }
   .orientacion1, .orientacion2,
   .orientacion2 {
     display: flex;
@@ -356,7 +358,7 @@ form {
     display: grid;
     grid-template-columns: 1fr;
     margin: 2vh 0; }
-    .seccion_eventos h3 {
+    .seccion_eventos h2 {
       font-size: 2em; }
     .seccion_eventos p {
       font-size: 1.3em;
